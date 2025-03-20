@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Application</title>
+    <link rel="stylesheet" href="QC.css">
+</head>      
+<body>
+    <script src="QA.js"></script>
+    <div class="quiz-container">
+        <h1>Interactive Quiz</h1>
+        <div id="quiz">  
+            <div class="question-container">
+                <span id="question"></span>
+            </div>
+            <div class="options-container">
+                <button class="option" id="option1" onclick="selectAnswer(0)"></button>
+                <button class="option" id="option2" onclick="selectAnswer(1)"></button>
+                <button class="option" id="option3" onclick="selectAnswer(2)"></button>
+                <button class="option" id="option4" onclick="selectAnswer(3)"></button>
+            </div>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+        <div id="score-container" class="hidden">
+            <h2>Your Score: <span id="score">0</span>/4</h2>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+</body>
+</html>
